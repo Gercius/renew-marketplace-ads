@@ -1,0 +1,22 @@
+{
+    "name": "renew-marketplace-ads",
+    "version": "1.0.0",
+    "description": "Script for renewing ads on skelbiu",
+    "type": "module",
+    "engines": {
+        "node": ">=20.6.0"
+    },
+    "main": "main.ts",
+    "scripts": {
+        "start": "node --env-file=.env dist/main.js",
+        "start:pw": "set PWDEBUG=1 && node --env-file=.env --inspect dist/main.js",
+        "build": "tsc"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@playwright/test": "^1.40.0",
+        "@types/node": "^20.10.0"
+    }
+}
